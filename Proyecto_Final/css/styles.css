@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 30px 20px 20px 20px;
+}
+
+.calculadora-container {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+}
+
+#resultado-container {
+    width: 100%;
+    height: 120px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #fff;
+    font-size: 40px;
+}
+
+.principal-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.numeros-container {
+    width: 75%;
+}
+
+.numero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.numero, .operador {
+    background: transparent;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: #fff;
+    padding: 25px 30px;
+    font-size: 20px;
+    margin: 1px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: ease all 0.25s;
+}
+
+.numero {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.numero:hover, .operador:hover {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0,0,0,0.1);
+}
+
+.numero-igual {
+    background:rgba(143, 0, 161, 0.5)
+}
+
+.numero-igual:hover {
+    background: rgba(143, 0, 161, 0.1);
+    border: 1px solid rgba(143, 0, 161, 0.5);
+}
+
+.operador-pequeno {
+    padding: 25px 32px;
+}

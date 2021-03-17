@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en JS</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <p>Se definen como acciones que se ejecutan tanto por el navegador como por el usuario.</p>
+
+    <h2>Modelo básico de eventos</h2>
+    <ul>
+        <li>Características limitadas</li>
+        <li>Funciona en todos los navegadores</li>
+        <li>Se llaman a través de funciones en línea con las etiquetas HTML</li>
+    </ul>
+
+    <button onclick="alert('Cambiando a fondo azul...');">Alert cambia fondo a azul</button>
+    <button onclick="cambiaFondo('red');">Cambia a fondo</button>
+
+    <h2>Modelo de eventos estándar</h2>
+    <ul>
+        <li>Se utiliza para temas complejos</li>
+        <li>Funciona en todos los navegadores</li>
+        <li>Se llaman a través de nuestros scripts de JS</li>
+    </ul>
+
+    <button id="btnCambioLetra">Cambio de letra</button>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
